@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Ponds - 2D Farm & Fishing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="instructions">
+            <h2>🎣 Pixel Ponds 🌾</h2>
+            <p><b>WASD</b> — Move | <b>1-4</b> — Select Tool | <b>Left Click</b> — Use Tool | <b>Right Click</b> — Fish Battle Click</p>
+            <p><b>Tools:</b> 1=Hoe  2=Water  3=Seeds  4=Fishing Rod | <b>E</b> — Sleep (Next Day)</p>
+            <button id="startBtn" onclick="startGame()">▶ Start Game</button>
+        </div>
+    </div>
+
+    <!-- Load generated asset images for reference display -->
+    <img id="img-player" src="assets/player_sprites.jpg" style="display:none">
+    <img id="img-env" src="assets/environment_tiles.jpg" style="display:none">
+    <img id="img-fish" src="assets/fish_sprites.jpg" style="display:none">
+    <img id="img-crops" src="assets/crop_sprites.jpg" style="display:none">
+    <img id="img-tools" src="assets/tool_icons.jpg" style="display:none">
+    <img id="img-ui" src="assets/ui_elements.jpg" style="display:none">
+
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

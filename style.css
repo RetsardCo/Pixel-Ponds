@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    border: 4px solid #5a3a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7), inset 0 0 10px rgba(0,0,0,0.3);
+    background: #000;
+}
+
+#gameCanvas {
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    cursor: crosshair;
+}
+
+#instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(30, 20, 10, 0.95);
+    border: 3px solid #c8a060;
+    border-radius: 12px;
+    padding: 30px 40px;
+    color: #f0e0c0;
+    text-align: center;
+    z-index: 10;
+    min-width: 500px;
+}
+
+#instructions h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#instructions p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #d4c4a0;
+}
+
+#instructions b {
+    color: #ffcc44;
+}
+
+#startBtn {
+    margin-top: 16px;
+    padding: 12px 40px;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(180deg, #4a8c3f, #2d6b24);
+    color: #fff;
+    border: 2px solid #6aac5f;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#startBtn:hover {
+    background: linear-gradient(180deg, #5aac4f, #3d7b34);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(100, 200, 80, 0.4);
+}
